@@ -39,8 +39,8 @@ const s3vectorsClient = new S3VectorsClient({ region: S3_VECTORS_REGION });
       );
     }
 
-    const query = "うさぎ";
-    // const query = "image_01-embed.json";
+    // const query = "うさぎ";
+    const query = "image_01-embed.json";
 
     const queryType = (() => {
       if (typeof query !== "string" || query.trim().length === 0) {
